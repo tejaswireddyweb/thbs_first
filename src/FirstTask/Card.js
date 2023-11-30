@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Card = ({ id, name, genre, status, handleClick }) => {
-  const { idParam } = useParams();
+  // const { idParam } = useParams();
   return (
     <div
       className={status === 0 ? "cards" : "cardSelected"}

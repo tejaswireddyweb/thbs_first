@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 import Card from "./Card.js";
 import { SeriesJsonData } from "./SeriesJsonData.js";
-import { Link } from "react-router-dom";
 
 function FirstComponent() {
   console.log(SeriesJsonData);
@@ -14,7 +13,7 @@ function FirstComponent() {
   };
 
   useEffect(() => {
-    const hello = selectedCard;
+    // const hello = selectedCard;
     setSeries((prevData) => {
       return prevData.map((movie) => {
         return movie.name === selectedCard
